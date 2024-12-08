@@ -23,7 +23,7 @@ const { movie, isLoading, isError } = useMovie(
     <div :class="$style.content">
       <div :class="$style.scrollable">
         <h1>Description</h1>
-        <p>{{ movie.description }}</p>
+        <p :class="$style.description">{{ movie.description }}</p>
         <h1>Trivia</h1>
         <ul>
           <li v-for="item in movie.trivia" :key="item">{{ item }}</li>
@@ -73,6 +73,10 @@ const { movie, isLoading, isError } = useMovie(
   flex-direction: column;
   gap: 1rem;
   padding-right: 0;
+}
+
+.description {
+  width: 340px;
 }
 
 .poster {
