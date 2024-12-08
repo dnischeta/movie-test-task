@@ -4,7 +4,7 @@ This is a movie app test task.
 
 ## Demo
 
-TBD
+You can see the demo [here](https://dnischeta.github.io/movie-test-task/).
 
 ## Project Setup
 
@@ -38,4 +38,10 @@ npm run build
 
 ```sh
 npm run lint
+```
+
+### Storybook
+
+```sh
+npm run storybook
 ```

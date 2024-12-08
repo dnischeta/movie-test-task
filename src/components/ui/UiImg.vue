@@ -5,13 +5,13 @@ withDefaults(
     alt?: string
   }>(),
   {
-    src: '/cover-placeholder.jpeg',
+    src: `${import.meta.env.BASE_URL}/cover-placeholder.jpeg`,
   },
 )
 
 function onImgError(e: Event) {
   if (e.target && e.target instanceof HTMLImageElement) {
-    e.target.src = '/cover-placeholder.jpeg'
+    e.target.src = `${import.meta.env.BASE_URL}/cover-placeholder.jpeg`
   }
 }
 </script>

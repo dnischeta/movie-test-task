@@ -7,7 +7,7 @@ const meta: Meta = {
   args: {
     name: 'Title',
     description: 'Description some other text',
-    poster: '/cover-placeholder.jpeg',
+    poster: `./cover-placeholder.jpeg`,
     tags: [
       { text: 'Score', icon: 'star', color: 'success' },
       { text: 'Genre', icon: 'film', color: 'info' },

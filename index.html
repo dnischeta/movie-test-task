@@ -10,12 +10,5 @@
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
     <div style="display: none;" data-sprite></div>
-    <script>
-      fetch('/src/assets/icons/sprite.svg')
-        .then(res => res.text())
-        .then(sprite => {
-          document.querySelector('[data-sprite]').innerHTML = sprite
-        })
-    </script>
   </body>
 </html>
