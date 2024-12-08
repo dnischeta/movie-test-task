@@ -1,0 +1,9 @@
+:root {
+  --color-background: #000;
+  --color-text: #fff;
+  --color-surface: #292d32;
+  --color-success: #039c55;
+  --color-info: #2c81fb;
+  --color-accent: #702bfe;
+  --color-danger: #e81a0c;
+}
