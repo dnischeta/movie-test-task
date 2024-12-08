@@ -8,8 +8,6 @@ export type Movie = {
   genre: string
 }
 
-export type MovieList = Movie[]
-
 export type MovieDetails = Movie & {
   trivia: string[]
   actors: Array<{

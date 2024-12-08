@@ -56,8 +56,7 @@ defineProps<{
   transform: translate(-0.625rem, -0.625rem);
 }
 
-.card:has(.link:focus-visible),
-.card:has(.link:active) {
+.card:has(.link:focus-visible) {
   outline: 0.1875rem solid var(--color-accent);
 }
 

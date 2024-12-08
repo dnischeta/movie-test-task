@@ -2,17 +2,22 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import ListPage from '../pages/ListPage.vue'
 import MoviePage from '../pages/MoviePage.vue'
 
+export const ROUTES = {
+  list: 'list',
+  movie: 'movie',
+} as const
+
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'list',
+      name: ROUTES.list,
       component: ListPage,
     },
     {
       path: '/movie/:id',
-      name: 'movie',
+      name: ROUTES.movie,
       component: MoviePage,
     },
   ],

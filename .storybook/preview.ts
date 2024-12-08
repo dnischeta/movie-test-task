@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/vue3'
-import '../src/assets/main.css'
+import '../src/assets/css/main.css'
 import { loadSprite } from './loadSprite'
 import { setup } from '@storybook/vue3'
 import { createRouter, createWebHistory } from 'vue-router'

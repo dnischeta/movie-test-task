@@ -54,13 +54,6 @@ const { movie, isLoading, isError } = useMovie(
   min-height: 100%;
 }
 
-@media (min-width: 768px) {
-  .movie {
-    grid-template-columns: 236px 1fr;
-    gap: 4rem;
-  }
-}
-
 .sidebar {
   position: relative;
   height: auto;
@@ -69,23 +62,9 @@ const { movie, isLoading, isError } = useMovie(
   gap: 1.5rem;
 }
 
-@media (min-width: 768px) {
-  .sidebar {
-    position: sticky;
-    top: 0;
-    height: calc(100vh - 200px - 4rem);
-  }
-}
-
 .content {
   position: relative;
   height: auto;
-}
-
-@media (min-width: 768px) {
-  .content {
-    height: calc(100vh - 200px - 4rem);
-  }
 }
 
 .scrollable {
@@ -94,18 +73,6 @@ const { movie, isLoading, isError } = useMovie(
   flex-direction: column;
   gap: 1rem;
   padding-right: 0;
-}
-
-@media (min-width: 768px) {
-  .scrollable {
-    position: absolute;
-    padding-right: 1rem;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-y: auto;
-  }
 }
 
 .poster {
@@ -123,5 +90,32 @@ const { movie, isLoading, isError } = useMovie(
 
 .actor {
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .movie {
+    grid-template-columns: 236px 1fr;
+    gap: 4rem;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+  }
+
+  .sidebar,
+  .content {
+    height: calc(100vh - 2 * var(--header-height) - 4rem);
+  }
+
+  .scrollable {
+    position: absolute;
+    padding-right: 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+  }
 }
 </style>

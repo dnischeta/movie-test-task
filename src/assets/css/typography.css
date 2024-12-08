@@ -57,7 +57,7 @@ body {
 
 .text-sm {
   font-size: 0.6875rem;
-  line-height: 0.806rem;
+  line-height: 1;
 }
 
 .text-one-line {

@@ -1,4 +1,8 @@
 :root {
+  --header-height: 6.25rem;
+  --footer-height: 6.25rem;
+  --content-padding: 1rem;
+
   --color-background: #000;
   --color-text: #fff;
   --color-surface: #292d32;
@@ -6,4 +10,10 @@
   --color-info: #2c81fb;
   --color-accent: #702bfe;
   --color-danger: #e81a0c;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --content-padding: 3rem;
+  }
 }
